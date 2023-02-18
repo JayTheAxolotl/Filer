@@ -1,2 +1,5 @@
-import filer
-print(filer.read("Hello.txt"))
+from filer import fileTxt
+
+HelloText = fileTxt("Hello.txt")
+
+print(HelloText.read())
