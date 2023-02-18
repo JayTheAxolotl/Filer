@@ -14,10 +14,9 @@ class fileTxt():
 		myfile.close
 
 	def read(self):
-		myfile = open(self.file, 'r')
-		message = str(myfile.read())
-		return message
-
+		myfile = open(self.file, "r")
+		return myfile.readlines()
+	
 	def readEntire(self):
 		myfile = open(self.file, 'r')
 		message = str(myfile.read())
